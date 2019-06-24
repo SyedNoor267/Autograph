@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/header_image_holder"
+        android:layout_width="@dimen/app_slide_item_dimension"
+        android:layout_height="@dimen/app_slide_item_dimension"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/app_slide_item_margin"
+        app:civ_border_color="@color/defaultAppColor"
+        app:civ_shadow_radius="1"
+        app:civ_border="true"
+        app:civ_shadow_color="@color/defaultAppColor"/>
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="@dimen/app_slide_item_text_dimension"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorwhite"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Chat"
+        android:textSize="20dp"/>
+
+</LinearLayout>

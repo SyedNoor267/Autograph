@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@drawable/facebook"
+        android:width="@dimen/social_login_width"
+        android:height="@dimen/social_login_height"
+        android:right="15dp"
+        android:bottom="4dp"
+        />
+</layer-list >

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relative_layout_application_layout_interface"
+        android:background="@color/defaultAppColor"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:src="@drawable/btn_back1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <helpers.LetterSpacingTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/hooke_textview_application_layout_interface"
+                android:textColor="@color/colorwhite"
+                android:text="@string/hooke"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scrollpane_layout_height"
+        android:gravity="center"
+        android:padding="@dimen/scrollpane_layout_padding">
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/scroll_pane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/scrollpane_scrollview_margin"
+            app:fastScrollEnabled="false">
+
+        </com.yarolegovich.discretescrollview.DiscreteScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colorwhite">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_layout_height"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@color/defaultAppColor">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <helpers.LetterSpacingTextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorwhite"
+                android:text="Switch on to Broadcast Beacon" />
+        </LinearLayout>
+        <Switch
+            android:id="@+id/txSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textColor="@color/colorwhite" />
+    </LinearLayout>
+
+</LinearLayout>

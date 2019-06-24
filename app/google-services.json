@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "101668178568",
+    "firebase_url": "https://hookebeacon.firebaseio.com",
+    "project_id": "hookebeacon",
+    "storage_bucket": "hookebeacon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101668178568:android:48a73d77550dbb03",
+        "android_client_info": {
+          "package_name": "com.example.appiapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101668178568-om6k1s60vpj9tvvl2t1iv94h6a7dtr94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appiapi",
+            "certificate_hash": "680d1929bcc5e00e8d95bf28594a9c6c56067f69"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_NnQ2aAP8YXcDVu0HuVIfidlv21DxBHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101668178568-65pq0r3akkjeoe91va5hlv35vcktvlg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

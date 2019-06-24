@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/contact_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/list_item1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tab_background"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:weightSum="10"
+        android:layout_marginLeft="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/beaconId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="name"
+                android:singleLine="true"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/form_text_size"
+                android:textStyle="bold"
+                android:gravity="left|center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/profile_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="@dimen/form_field_text_spacing"
+                    android:background="@drawable/connect_background"
+                    android:text="View Profile"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="20dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/defaultAppColor" />
+                <Button
+                    android:id="@+id/connect_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="@dimen/form_field_text_spacing"
+                    android:background="@drawable/connect_background"
+                    android:text="Connect"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/defaultAppColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/contact_profile_image"
+        android:layout_height="@dimen/contact_profile_image"
+        android:layout_marginTop="12dp"
+        android:padding="2dp">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/beacon_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/user_name"
+            app:civ_border_color="@color/defaultAppColor"
+            app:civ_border="true"
+            app:civ_border_width="2dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

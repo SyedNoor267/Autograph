@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background">
+    <ImageView
+        android:id="@+id/iv_close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_close_black_24dp"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="10dp"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="-5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up Using"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/login_content_spacing">
+
+            <FrameLayout
+                android:layout_width="@dimen/social_login_width"
+                android:layout_height="@dimen/social_login_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_gravity="center">
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/button_fb_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+                <Button
+                    android:id="@+id/button_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onClickFacebookButton"
+                    android:background="@drawable/fcbk"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/social_login_width"
+                android:layout_height="@dimen/social_login_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <Button
+                    android:id="@+id/button_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onClickGoogleButton"
+                    android:background="@drawable/google"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/social_login_width"
+                android:layout_height="@dimen/social_login_height"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                >
+                <Button
+                    android:id="@+id/button_instagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClickGoogleButton"
+                    android:background="@drawable/insta"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:text="Sign Up Manually"
+            android:textColor="@color/colorwhite"
+            android:theme="@style/AppTheme"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_back1"
+            android:textSize="@dimen/login_text_size"/>
+    </LinearLayout>
+
+</LinearLayout>

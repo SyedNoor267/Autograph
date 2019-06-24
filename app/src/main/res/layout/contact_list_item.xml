@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/contact_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:id="@+id/list_item1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_chat_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="name"
+                android:singleLine="true"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/form_text_size"
+                android:layout_gravity="center|left"
+                android:gravity="left|center"/>
+
+            <TextView
+                android:id="@+id/tv_last_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="name"
+                android:singleLine="true"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp"
+                android:gravity="left|center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_view_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/form_field_text_spacing"
+            android:background="@drawable/chat_button"
+            android:text="View Chat"
+            android:textAllCaps="false"
+            android:layout_gravity="center|right"
+            android:textColor="@color/colorwhite"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:padding="1dp"
+        android:background="@drawable/profile_pic_holder">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_Chat_Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/user_name"
+            app:civ_border_color="@color/defaultAppColor"
+            app:civ_border_width="1dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Autograph</string>
+    <!--<string name="fb_login_protocol_scheme">fb2234634573226639</string>
+    <string name="facebook_app_id">2234634573226639</string>-->
+    <string name="fb_login_protocol_scheme">fb2620859334596393</string>
+    <string name="facebook_app_id">2620859334596393</string>
+
+    <string name="permission_rationale">
+        Location permission is required when scanning for beacons with Nearby.
+    </string>
+    <string name="permission_denied_explanation">
+        Permission was denied, but is needed. Go to Settings.
+    </string>
+        <string name="permission_denied">
+        Permission to use Nearby denied. Cannot subscribe.
+    </string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="scanning">
+        Scanning for beacons&#8230;
+    </string>
+    <string name="one_message">
+        Scanning. Found 1 message
+    </string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="terms_and_conditions_of_use"> 1. Project Authorization &amp; Services. The "Services" provided under these Terms and Conditions will be those set forth in any mutually agreed services schedule, Autograph quotation ("Quote"), order form, statement of work or other document executed by Autograph and Client referencing these Terms and Conditions (each, a "Services Schedule"). The Services may include (a) configuration, implementation, training or other consultation related to Autograph product or service that Client has received rights to use under a separate agreement, and/or (b) strategic, advisory, design and/or other consulting services related to digital marketing. Each Services Schedule shall be governed by these Terms and Conditions. Client warrants that the individual executing the Services Schedule is a duly authorized representative of Client. </string>
+    <string name="many_messages">
+        Scanning. Found %1$d messages
+    </string>
+    <string name="click_to_set">[click to set]</string>
+
+    <string-array name="stability_enums">
+        <item>STABLE</item>
+        <item>PORTABLE</item>
+        <item>MOBILE</item>
+        <item>ROVING</item>
+    </string-array>
+    <string name="tx_power_high">High ~16 dBm</string>
+    <string name="tx_power_medium">Medium ~26 dBm</string>
+    <string name="tx_power_low">Low ~35 dBm</string>
+    <string name="tx_power_ultra_low">Ultra-low ~59 dBm</string>
+    <string name="tx_mode_low_latency">Low latency ~7 Hz</string>
+    <string name="tx_mode_balanced">Balanced ~3 Hz</string>
+    <string name="tx_mode_low_power">Low power ~1 Hz</string>
+    <string-array name="tx_power_array">
+        <item>@string/tx_power_high</item>
+        <item>@string/tx_power_medium</item>
+        <item>@string/tx_power_low</item>
+        <item>@string/tx_power_ultra_low</item>
+    </string-array>
+    <string-array name="tx_mode_array">
+        <item>@string/tx_mode_low_latency</item>
+        <item>@string/tx_mode_balanced</item>
+        <item>@string/tx_mode_low_power</item>
+    </string-array>
+    <string name="hooke">Autograph</string>
+</resources>

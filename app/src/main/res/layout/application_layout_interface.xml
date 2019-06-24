@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical"
+        android:background="@color/defaultAppColor">
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|left"
+            android:padding="10dp"
+            android:background="@drawable/back_button"
+            android:gravity="left|center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_slide_height"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/gadget_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/scroll_pane"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:paddingTop="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:fastScrollEnabled="false">
+
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:baselineAligned="true">
+                <Switch
+                    android:id="@+id/txSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:textColor="@color/colorwhite"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colorwhite">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+</LinearLayout>

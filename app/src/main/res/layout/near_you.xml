@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sign_up"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_back2"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvcontacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/list_margins_sides"
+            android:layout_marginRight="@dimen/list_margins_sides"
+            android:layout_marginBottom="@dimen/list_margins_vertical"
+            android:orientation="vertical"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="@dimen/floating_object_dimensions"
+            android:layout_height="@dimen/floating_object_dimensions"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/floating_object_margin"
+            android:layout_marginRight="@dimen/floating_object_margin"
+            android:elevation="12dp"
+            android:backgroundTint="@color/defaultAppColor"
+            android:src="@drawable/search_icon" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

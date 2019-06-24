@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/mail"
+        android:width="25dp"
+        android:height="25dp"
+        android:right="15dp"
+        android:bottom="0dp"
+        />
+
+</layer-list >

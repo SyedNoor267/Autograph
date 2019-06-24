@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorwhite"
+        android:text="Switch onn to Broadcast Beacon" />
+    <Switch
+        android:id="@+id/txSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textColor="@color/colorwhite" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/broadcast"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/beacongif"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/iconnect"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beacongif"
+            android:layout_gravity="center"
+            android:textColor="@color/colorwhite"
+            android:text="Your phone is broadcasting beacon packets."/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/defaultAppColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up Complete"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_people_around"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Smartphone to search people around you"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_hooke_gadget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_button_vertical_margin"
+            android:text="Associate a Hooke gadget to this account"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

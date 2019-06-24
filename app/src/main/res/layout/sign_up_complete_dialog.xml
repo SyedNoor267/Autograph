@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AlertDialogLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/defaultAppColor"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="4">
+        <LinearLayout
+            android:id="@+id/use_smart_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use smart phone to"
+                android:theme="@style/AppTheme"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search for people around you"
+                android:theme="@style/AppTheme"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/associate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Associate with a Hooke"
+                android:fontFamily="sans-serif-thin"
+                android:theme="@style/AppTheme"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gadget to this account"
+                android:theme="@style/AppTheme"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.AlertDialogLayout>
